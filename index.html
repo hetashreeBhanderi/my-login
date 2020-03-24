@@ -3,9 +3,32 @@
         <title>
             MyProject
         </title>
+        <script src="jquery-3.4.1.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+              $("#1").on("click", function(){
+                $("p").hide();
+              });
+            });
+        </script>  
+        <script>
+            $(document).ready(function(){
+              $("#2").on("click", function(){
+                $("p").show();
+              });
+            });
+            
+        </script>          
     </head>
     <body>
-        <p>This is my 1st page!</p>
-        <p>Login Form</p>
+        <h1>This is Heading!</h1>
+        <p>hello This is one paragraph.</p>
+        <p>This is another paragraph.</p>
+        <p>paragraph 3 is here!</p>
+      
+        <button id="1">Click me to hide paragraphs</button>
+        <button id="2">click me to show hidden paragraphs</button>
+
     </body>
 </html>
