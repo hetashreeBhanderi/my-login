@@ -8,18 +8,18 @@
         <script>
             $(document).ready(function(){
               $("#1").on("click", function(){
-                $("p").hide();
+                $("p").toggle();
               });
             });
         </script>  
-        <script>
+        <!-- <script>
             $(document).ready(function(){
               $("#2").on("click", function(){
                 $("p").show();
               });
             });
             
-        </script>          
+        </script>           -->
     </head>
     <body>
         <h1>This is Heading!</h1>
@@ -27,8 +27,8 @@
         <p>This is another paragraph.</p>
         <p>paragraph 3 is here!</p>
       
-        <button id="1">Click me to hide paragraphs</button>
-        <button id="2">click me to show hidden paragraphs</button>
+        <button id="1">Click me to hide/show paragraphs</button>
+        <!-- <button id="2">click me to show hidden paragraphs</button> -->
 
     </body>
 </html>
