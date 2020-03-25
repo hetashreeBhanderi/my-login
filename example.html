@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>
+            MyProject
+        </title>
+        <script src="jquery-3.4.1.js"> </script>
+        <script src="demo.js"> </script>  
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+      <h2>Filterable Table</h2>
+      <p>Type something in the input field to search the table for first names, last names or emails:</p>  
+      <input id="myInput" type="text" placeholder="Search..">
+      <br><br>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Firstname</th> 
+            <th>Lastname</th> 
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody id="myTable">
+          <tr>
+            <td>Hetashree</td>
+            <td>Bhanderi</td>
+            <td>hetashree@example.com</td>
+          </tr>
+          <tr>
+            <td>Parth</td>
+            <td>Kanani</td>  
+            <td>parth@mail.com</td>
+          </tr>
+          <tr>
+            <td>Mayank</td>
+            <td>Bhanderi</td>
+            <td>mayank@greatstuff.com</td>
+          </tr>
+          <tr>
+            <td>Dhara</td>
+            <td>Patel</td>
+            <td>dhara@test.com</td>
+          </tr>
+          <tr>
+            <td>Hetashree</td>
+            <td>Patel</td>
+            <td>hetashreepatel@example.com</td>
+          </tr>
+          <tr>
+            <td>Bindiya</td>
+            <td>Patel</td>  
+            <td>bindiya@mail.com</td>
+          </tr>
+        </tbody>
+      </table>
+  
+<p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+
+    </body>
+</html>
